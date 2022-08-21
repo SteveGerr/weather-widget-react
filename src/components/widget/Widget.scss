@@ -1,0 +1,93 @@
+.widget {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 200px;
+    margin: auto;
+    padding: 5px;
+    font-family: 'Mouse Memoirs', sans-serif;
+    color: #565656;
+    box-shadow: 1px 3px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.widget__menu,
+.widget__temp-row,
+.widget__weather-params {
+    display: flex;
+    flex-direction: row;
+}
+
+.widget__menu {
+    justify-content: space-between;
+    font-size: 22px;
+}
+
+.widget__settings-btn,
+.widget__settings-close,
+.widget__settings-add-btn,
+.widget__settings-city-remove {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    &:active {
+    transform: scale(.8);
+    }
+
+}
+
+.widget__settings-btn {
+    &:hover {
+    .widget__settings-img {
+        transform: rotate(45deg);
+        transition: transform .4s;
+    }
+    }
+}
+
+.widget__weather-description {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.widget__weather-params {
+    flex-wrap: wrap;
+}
+
+.widget__display-temp {
+    margin: auto;
+    font-size: 46px;
+}
+
+.widget__weather-params-item {
+    display: flex;
+    align-items: center;
+}
+
+.widget__weather-params-item:first-child {
+    width: 100%;
+    font-size: 22px;
+}
+.widget__weather-params-item:nth-child(2),
+.widget__weather-params-item:nth-child(3) {
+    width: 50%;
+    font-size: 22px;
+}
+
+.widget__weather-img,
+.widget__settings-img {
+    width: 16px;
+    height: 16px;
+    transition: transform .4s;
+}
+
+.widget__weather-img {
+    margin: 5px;
+}
+
+.widget__temp-img {
+    width: 100%;
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: cover;
+}

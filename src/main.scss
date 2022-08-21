@@ -1,0 +1,13 @@
+.widget,
+.widget__settings {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 200px;
+  margin: auto;
+  padding: 5px;
+  font-family: 'Mouse Memoirs', sans-serif;
+  color: #565656;
+  box-shadow: 1px 3px 8px 0px rgba(34, 60, 80, 0.2);
+}

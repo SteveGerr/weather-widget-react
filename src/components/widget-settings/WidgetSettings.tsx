@@ -55,9 +55,7 @@ const WidgetSettings = () => {
         <DragDropContext onDragEnd={onDragEnd}>
             <Droppable droppableId="droppable">
                 {
-                    (provided: {
-                        [x: string]: ReactNode; droppableProps: any; innerRef: any;
-}, _snapshot: any) => (
+                    (provided: {[x: string]: ReactNode; droppableProps: any; innerRef: any;}, _snapshot: any) => (
                         <div
                             {...provided.droppableProps}
                             ref={provided.innerRef}

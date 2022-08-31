@@ -25,7 +25,7 @@ const Widget = () => {
     return (
         <div className="widget">
           <div className="widget__menu">
-            <div className="widget__city"><span className="widget__city-name">{cities[0].city}</span>, city.country</div>
+            <div className="widget__city"><span className="widget__city-name">{cities[0].city}</span>, {cities[0].country}</div>
             <button className="widget__settings-btn">
               <img className="widget__settings-img" src={gear} alt="gear" />
             </button>

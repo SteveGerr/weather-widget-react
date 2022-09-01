@@ -16,11 +16,13 @@ const Widget = () => {
   let [cities, setCities] = useState<weatherData[]>([])
   const getIconSrc = (iconCode: string) => `http://openweathermap.org/img/wn/${iconCode}@2x.png`
 
+
   useEffect(() => {
     getCoords()
-    lsData = JSON.parse(ls.getItem("wData") || "")
-    setCities(() => cities = lsData)
   }, [])
+
+  useEffect(() => lsData = JSON.parse(ls.getItem("wData") || ""))
+  useEffect(() => setCities(() => cities = lsData))
 
     return (
         <div className="widget">
